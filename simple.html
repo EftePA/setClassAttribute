@@ -1,0 +1,34 @@
+<script type="module">
+    const liveView = document.getElementById('liveView');
+
+    const p = document.createElement("p");
+    p.setAttribute("class", "demo");
+    p.innerText = "Hello";
+    liveView.appendChild(p);
+
+    const highlighter = document.createElement("div");
+    highlighter.setAttribute("class", "highlighter");
+    liveView.appendChild(highlighter);
+
+</script>
+
+
+<html>
+    <body>
+        <div id="liveView" class="videoView">
+        </div>
+    </body>
+</html>
+
+<style>
+.demo {
+    background-color: #ff0000 !important;
+}
+.highlighter {
+    background: rgba(237, 247, 237, 0.25);
+    border: 1px dashed #fff;
+    z-index: 1;
+    position: absolute;
+}
+</style>
+
